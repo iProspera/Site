@@ -73,27 +73,27 @@
     <nav class="p-nav" id="mainNav">
       <div class="p-container p-nav-inner">
         <a href="index.html" class="p-nav-logo">
-          <img src="assets/images/logo-white.png" alt="Prospera Financial" width="60" height="56">
+          <img src="assets/images/prospera-logo.png" alt="Prospera Financial" width="60" height="56">
         </a>
         <ul class="p-nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="wealth">Wealth</a></li>
-        <li><a href="taxfree">TaxFree</a></li>
-        <li><a href="bank">Bank</a></li>
-        <li><a href="schedule">Schedule</a></li>
-        <li><a href="about">About</a></li>
-        <li><a href="cfo">CFO</a></li>
-        <li><a href="insurance">Insurance</a></li>
+        <li><a href="wealth.html">Wealth</a></li>
+        <li><a href="taxfree.html">TaxFree</a></li>
+        <li><a href="bank.html">Bank</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cfo.html">CFO</a></li>
+        <li><a href="insurance.html">Insurance</a></li>
 
           <li class="p-nav-more">
             <button class="p-nav-more-btn" id="pMoreBtn" aria-expanded="false">
               More <svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
             </button>
             <div class="p-nav-dropdown" id="pMoreDropdown">
-          <a href="journey">Journey</a>
-          <a href="resources">Resources</a>
-          <a href="upload">Upload</a>
-          <a href="contact" class="active">Contact</a>
+          <a href="journey.html">Journey</a>
+          <a href="resources.html">Resources</a>
+          <a href="upload.html">Upload</a>
+          <a href="contact.html" class="active">Contact</a>
 
             </div>
           </li>
@@ -108,17 +108,17 @@
       </div>
       <div class="p-mobile-menu" id="pMobileMenu">
       <a href="index.html">Home</a>
-      <a href="wealth">Wealth</a>
-      <a href="taxfree">TaxFree</a>
-      <a href="bank">Bank</a>
-      <a href="schedule">Schedule</a>
-      <a href="about">About</a>
-      <a href="cfo">CFO</a>
-      <a href="insurance">Insurance</a>
-      <a href="journey">Journey</a>
-      <a href="resources">Resources</a>
-      <a href="upload">Upload</a>
-      <a href="contact" class="active">Contact</a>
+      <a href="wealth.html">Wealth</a>
+      <a href="taxfree.html">TaxFree</a>
+      <a href="bank.html">Bank</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="about.html">About</a>
+      <a href="cfo.html">CFO</a>
+      <a href="insurance.html">Insurance</a>
+      <a href="journey.html">Journey</a>
+      <a href="resources.html">Resources</a>
+      <a href="upload.html">Upload</a>
+      <a href="contact.html" class="active">Contact</a>
 
         <a href="tel:7195216050" class="p-mobile-phone">📞 719.521.6050</a>
       </div>
@@ -132,6 +132,38 @@
           <p class="p-hero-sub">We'd love to hear from you. Reach out by phone, email, or visit one of our offices.</p>
         </div>
       </section>
+      <section class="p-contact-form-section" style="padding:64px 0;background:#fff">
+        <div class="p-container" style="max-width:640px">
+          <h2 class="p-section-title" style="text-align:center;margin-bottom:8px">Send Us a Message</h2>
+          <p style="text-align:center;color:#555;margin-bottom:32px">Complete the form below and our team will reach out to you within 24 hours.</p>
+          <form id="contactForm" action="https://formspree.io/f/ContactUs@iProspera.com" method="POST" style="display:grid;gap:20px">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+              <div>
+                <label style="display:block;font-size:.875rem;font-weight:500;margin-bottom:6px;color:#2d2d2d">First Name *</label>
+                <input type="text" name="first_name" required style="width:100%;padding:12px 16px;border:1px solid #e0e0e0;border-radius:6px;font-size:.9375rem;font-family:inherit;transition:border-color .2s" onfocus="this.style.borderColor='#4a7c4a'" onblur="this.style.borderColor='#e0e0e0'">
+              </div>
+              <div>
+                <label style="display:block;font-size:.875rem;font-weight:500;margin-bottom:6px;color:#2d2d2d">Last Name *</label>
+                <input type="text" name="last_name" required style="width:100%;padding:12px 16px;border:1px solid #e0e0e0;border-radius:6px;font-size:.9375rem;font-family:inherit;transition:border-color .2s" onfocus="this.style.borderColor='#4a7c4a'" onblur="this.style.borderColor='#e0e0e0'">
+              </div>
+            </div>
+            <div>
+              <label style="display:block;font-size:.875rem;font-weight:500;margin-bottom:6px;color:#2d2d2d">Email *</label>
+              <input type="email" name="email" required style="width:100%;padding:12px 16px;border:1px solid #e0e0e0;border-radius:6px;font-size:.9375rem;font-family:inherit;transition:border-color .2s" onfocus="this.style.borderColor='#4a7c4a'" onblur="this.style.borderColor='#e0e0e0'">
+            </div>
+            <div>
+              <label style="display:block;font-size:.875rem;font-weight:500;margin-bottom:6px;color:#2d2d2d">Phone</label>
+              <input type="tel" name="phone" style="width:100%;padding:12px 16px;border:1px solid #e0e0e0;border-radius:6px;font-size:.9375rem;font-family:inherit;transition:border-color .2s" onfocus="this.style.borderColor='#4a7c4a'" onblur="this.style.borderColor='#e0e0e0'">
+            </div>
+            <div>
+              <label style="display:block;font-size:.875rem;font-weight:500;margin-bottom:6px;color:#2d2d2d">Message *</label>
+              <textarea name="message" rows="5" required style="width:100%;padding:12px 16px;border:1px solid #e0e0e0;border-radius:6px;font-size:.9375rem;font-family:inherit;resize:vertical;transition:border-color .2s" onfocus="this.style.borderColor='#4a7c4a'" onblur="this.style.borderColor='#e0e0e0'"></textarea>
+            </div>
+            <button type="submit" style="background:#4a7c4a;color:#fff;padding:14px 32px;border:none;border-radius:6px;font-size:.9375rem;font-weight:500;cursor:pointer;transition:background .2s;font-family:inherit" onmouseover="this.style.background='#3d6b3d'" onmouseout="this.style.background='#4a7c4a'">Send Message</button>
+          </form>
+        </div>
+      </section>
+
 
       <section class="p-section">
         <div class="p-container">
@@ -167,7 +199,7 @@
                 </div>
               </div>
               <div style="margin-top:2rem">
-                <a href="schedule" class="p-btn-primary">Schedule a Meeting Online</a>
+                <a href="schedule.html" class="p-btn-primary">Schedule a Meeting Online</a>
               </div>
             </div>
             <div class="p-contact-map">
@@ -186,7 +218,7 @@
       <div class="p-container">
         <div class="p-footer-grid">
           <div class="p-footer-brand">
-            <img src="assets/images/logo-white.png" alt="Prospera Financial" class="p-footer-logo">
+            <img src="assets/images/prospera-logo.png" alt="Prospera Financial" class="p-footer-logo" style="height:48px;width:auto">
             <p>Wealth preservation, retirement income planning, and tax-efficient strategies for your financial future.</p>
             <div class="p-footer-social">
               <a href="https://www.facebook.com/ProsperaFinancialCO" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -199,30 +231,30 @@
           </div>
           <div class="p-footer-col">
             <h4>Services</h4>
-            <a href="wealth">Wealth Solutions</a>
-            <a href="taxfree">Tax-Free Retirement</a>
-            <a href="bank">Personal Bank Strategy</a>
-            <a href="insurance">Insurance Solutions</a>
-            <a href="cfo">CFO Services</a>
+            <a href="wealth.html">Wealth Solutions</a>
+            <a href="taxfree.html">Tax-Free Retirement</a>
+            <a href="bank.html">Personal Bank Strategy</a>
+            <a href="insurance.html">Insurance Solutions</a>
+            <a href="cfo.html">CFO Services</a>
           </div>
           <div class="p-footer-col">
             <h4>Resources</h4>
             <a href="f/">Prospera Perspectives</a>
-            <a href="resources">Client Resources</a>
-            <a href="economy">Economy Dashboard</a>
-            <a href="journey">Your Journey</a>
+            <a href="resources.html">Client Resources</a>
+            <a href="economy.html">Prospera Economic Conditions Dashboard</a>
+            <a href="journey.html">Your Journey</a>
           </div>
           <div class="p-footer-col">
             <h4>Contact</h4>
-            <a href="contact">Contact Us</a>
-            <a href="schedule">Schedule a Meeting</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="schedule.html">Schedule a Meeting</a>
             <a href="tel:7195216050">719.521.6050</a>
             <a href="mailto:ContactUs@iProspera.com">ContactUs@iProspera.com</a>
           </div>
         </div>
         <div class="p-footer-bottom">
           <p>&copy; 2024–2026 Prospera Financial. All rights reserved.</p>
-          <a href="privacy">Privacy Policy</a>
+          <a href="privacy.html">Privacy Policy</a>
         </div>
       </div>
     </footer>
