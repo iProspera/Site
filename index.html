@@ -46,364 +46,167 @@
   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/46920844.js"></script>
 
   <style>
-/* ===== RESET ===== */
-.p-site *, .p-site *::before, .p-site *::after { box-sizing: border-box; margin: 0; padding: 0; }
-.p-site { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #2d2d2d; -webkit-font-smoothing: antialiased; line-height: 1.6; }
-.p-site img { max-width: 100%; height: auto; display: block; }
-.p-site a { text-decoration: none; color: inherit; }
-.p-site ul { list-style: none; }
-.p-site button { font-family: inherit; border: none; background: none; cursor: pointer; }
 
-/* ===== HIDE GODADDY NAV (uncomment if GoDaddy header appears above this code) =====
-header[data-ux], nav[data-ux] { display: none !important; }
-===== */
 
-/* ===== VARIABLES ===== */
-.p-site {
-  --nav-bg: #2f3b2d;
-  --nav-active: #8db580;
-  --hero-bg: #f2f2ea;
-  --hero-bg-dark: #eaeae0;
-  --green: #4a7c4a;
-  --green-dark: #3d6b3d;
-  --green-light: #5a9a5a;
-  --section-alt: #f8f8f5;
-  --text-primary: #2d2d2d;
-  --text-secondary: #555;
-  --text-muted: #777;
-  --card-border: #e0e0e0;
-  --serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
-  --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-}
 
-/* ===== CONTAINER ===== */
-.p-container { width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 1rem; }
-@media (min-width: 640px) { .p-container { padding: 0 1.5rem; } }
-@media (min-width: 1024px) { .p-container { padding: 0 2.5rem; } }
 
-/* ===== NAVIGATION ===== */
-.p-nav {
-  position: sticky; top: 0; z-index: 50;
-  background: var(--nav-bg);
-  box-shadow: 0 2px 12px rgba(0,0,0,.15);
-}
-.p-nav-inner {
-  display: flex; align-items: center; justify-content: space-between;
-  height: 72px;
-}
-.p-nav-logo img { height: 56px; width: auto; object-fit: contain; }
-.p-nav-links { display: none; align-items: center; gap: 1.5rem; }
-.p-nav-links a, .p-nav-more-btn {
-  font-size: .875rem; font-weight: 500; letter-spacing: .03em;
-  color: rgba(255,255,255,.9); transition: color .2s;
-}
-.p-nav-links a:hover, .p-nav-more-btn:hover { color: var(--nav-active); }
-.p-nav-more { position: relative; }
-.p-nav-more-btn { display: flex; align-items: center; gap: 4px; padding: 0; }
-.p-nav-more-btn svg { width: 14px; height: 14px; transition: transform .2s; }
-.p-nav-more-btn.open svg { transform: rotate(180deg); }
-.p-nav-dropdown {
-  display: none; position: absolute; right: 0; top: calc(100% + 8px);
-  width: 176px; background: var(--nav-bg);
-  border: 1px solid rgba(255,255,255,.1); border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.3); overflow: hidden;
-}
-.p-nav-dropdown.open { display: block; }
-.p-nav-dropdown a {
-  display: block; padding: 10px 16px;
-  font-size: .875rem; font-weight: 500;
-  color: rgba(255,255,255,.8); transition: all .15s;
-}
-.p-nav-dropdown a:hover { color: #fff; background: rgba(255,255,255,.1); }
-.p-nav-phone {
-  display: none; align-items: center; gap: 8px;
-  font-size: .875rem; font-weight: 500; letter-spacing: .03em;
-  color: rgba(255,255,255,.9); transition: color .2s;
-}
-.p-nav-phone:hover { color: var(--nav-active); }
-.p-nav-phone svg { width: 16px; height: 16px; }
-.p-nav-toggle { display: block; color: #fff; padding: 8px; border-radius: 8px; transition: background .2s; }
-.p-nav-toggle:hover { background: rgba(255,255,255,.1); }
-.p-nav-toggle svg { width: 24px; height: 24px; }
-.p-mobile-menu {
-  display: none; background: var(--nav-bg);
-  border-top: 1px solid rgba(255,255,255,.1); padding-bottom: 16px;
-}
-.p-mobile-menu.open { display: block; }
-.p-mobile-menu a {
-  display: block; padding: 12px 24px;
-  font-size: .875rem; font-weight: 500;
-  color: rgba(255,255,255,.8); transition: all .15s;
-}
-.p-mobile-menu a:hover { color: #fff; background: rgba(255,255,255,.05); }
-.p-mobile-phone { display: flex; align-items: center; gap: 8px; }
-.p-mobile-phone svg { width: 16px; height: 16px; }
-@media (min-width: 1024px) {
-  .p-nav-links { display: flex; }
-  .p-nav-phone { display: flex; }
-  .p-nav-toggle { display: none; }
-}
 
-/* ===== ACCENT BAR ===== */
-.p-accent { height: 4px; background: linear-gradient(to right, var(--green-dark), var(--green-light), var(--green-dark)); }
+@media (min-width: 768px) {  }
+@media (min-width: 1024px) {  }
 
-/* ===== HERO ===== */
-.p-hero { background: linear-gradient(to bottom, var(--hero-bg), var(--hero-bg-dark)); padding: 64px 0 80px; }
-.p-hero-grid { display: grid; gap: 48px; align-items: center; }
-.p-hero-eyebrow {
-  font-size: .75rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase;
-  color: var(--text-muted); margin-bottom: 20px;
-}
-.p-hero h1 {
-  font-family: var(--serif); font-size: 2.5rem; font-weight: 400;
-  line-height: 1.15; color: var(--text-primary); margin-bottom: 24px; letter-spacing: -.02em;
-}
-.p-hero-sub { font-size: 1.125rem; color: var(--text-secondary); max-width: 580px; line-height: 1.7; margin-bottom: 36px; }
-.p-hero-btns { display: flex; gap: 16px; flex-wrap: wrap; }
-.p-hero-img { border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,.12); order: -1; }
-.p-hero-img img { width: 100%; height: 280px; object-fit: cover; }
-.p-btn-primary {
-  display: inline-flex; align-items: center; gap: 8px;
-  background: var(--green); color: #fff;
-  padding: 14px 32px; border-radius: 6px;
-  font-size: .9375rem; font-weight: 500; transition: all .2s;
-}
-.p-btn-primary:hover { background: var(--green-dark); transform: translateY(-2px); }
-.p-btn-outline {
-  display: inline-flex; align-items: center; gap: 8px;
-  border: 1px solid var(--card-border); color: var(--text-primary);
-  padding: 14px 32px; border-radius: 6px;
-  font-size: .9375rem; font-weight: 500; transition: all .2s;
-}
-.p-btn-outline:hover { border-color: var(--green); color: var(--green); }
-@media (min-width: 768px) {
-  .p-hero-img img { height: 360px; }
-  .p-hero h1 { font-size: 3.25rem; }
-}
-@media (min-width: 1024px) {
-  .p-hero-grid { grid-template-columns: 1fr 1fr; }
-  .p-hero-text { text-align: left; }
-  .p-hero-img { order: 1; }
-  .p-hero-img img { height: 400px; }
-  .p-hero-sub { margin-left: 0; margin-right: 0; }
-}
 
-/* ===== SECTION HEADING ===== */
-.p-section-heading { text-align: center; margin-bottom: 56px; }
-.p-section-heading h2 {
-  font-family: var(--serif); font-size: 1.875rem; font-weight: 400;
-  color: var(--text-primary); margin-bottom: 16px; letter-spacing: -.01em;
-}
-.p-section-heading p { font-size: 1.0625rem; color: var(--text-secondary); max-width: 640px; margin: 0 auto; line-height: 1.7; }
-@media (min-width: 768px) { .p-section-heading h2 { font-size: 2.375rem; } }
 
-/* ===== FAMILY OFFICE ===== */
-.p-family-office { padding: 80px 0; background: var(--section-alt); }
-.p-puzzle-wrap { display: flex; justify-content: center; margin-bottom: 56px; }
-.p-puzzle-wrap svg { width: 420px; height: 420px; max-width: 100%; }
-.p-puzzle-wrap svg a:hover path { opacity: .9; }
-.p-pillar-grid { display: grid; gap: 28px; margin-bottom: 48px; }
-@media (min-width: 768px) { .p-pillar-grid { grid-template-columns: repeat(3, 1fr); } }
-.p-pillar-card {
-  background: #fff; border-radius: 12px; border: 1px solid var(--card-border);
-  padding: 32px; position: relative; overflow: hidden; transition: all .25s;
-}
-.p-pillar-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,.08); }
-.p-pillar-card .p-card-bar { position: absolute; top: 0; left: 0; right: 0; height: 3px; }
-.p-pillar-icon { width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
-.p-pillar-icon svg { width: 20px; height: 20px; }
-.p-pillar-card h3 { font-size: 1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 16px; }
-.p-pillar-card ul { margin-bottom: 20px; }
-.p-pillar-card li { display: flex; align-items: flex-start; gap: 10px; font-size: .875rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 10px; }
-.p-pillar-card li .p-check { flex-shrink: 0; margin-top: 2px; font-weight: 600; }
-.p-pillar-card .p-learn-more {
-  display: inline-flex; align-items: center; gap: 6px;
-  font-size: .875rem; font-weight: 500; color: var(--text-primary); transition: all .2s;
-}
-.p-pillar-card:hover .p-learn-more { color: var(--green); gap: 10px; }
-.p-pillar-card .p-learn-more svg { width: 16px; height: 16px; }
-.p-divider-row { display: flex; align-items: center; gap: 20px; max-width: 500px; margin: 0 auto; }
-.p-divider-row .p-line { flex: 1; height: 1px; background: var(--card-border); }
-.p-divider-row span {
-  font-size: .75rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
-  color: var(--text-muted); white-space: nowrap;
-}
 
-/* ===== SERVICES ===== */
-.p-services { padding: 80px 0; background: var(--section-alt); }
-.p-services-grid { display: grid; gap: 28px; }
-@media (min-width: 768px) { .p-services-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 1024px) { .p-services-grid { grid-template-columns: repeat(3, 1fr); } }
-.p-svc-card {
-  background: #fff; border-radius: 12px; border: 1px solid var(--card-border);
-  padding: 32px; position: relative; overflow: hidden; transition: all .25s;
-}
-.p-svc-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,.08); }
-.p-svc-card .p-card-bar { position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--green); }
-.p-svc-icon {
-  width: 48px; height: 48px; border-radius: 8px; background: var(--hero-bg);
-  display: flex; align-items: center; justify-content: center; margin-bottom: 20px;
-}
-.p-svc-icon svg { width: 24px; height: 24px; color: var(--green); }
-.p-svc-card h3 { font-size: 1.125rem; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
-.p-svc-card .p-svc-sub { font-family: var(--serif); font-style: italic; font-size: .9375rem; color: var(--green); margin-bottom: 16px; }
-.p-svc-card p { font-size: .9375rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 20px; }
-.p-svc-card .p-learn-more {
-  display: inline-flex; align-items: center; gap: 6px;
-  font-size: .875rem; font-weight: 500; color: var(--text-primary); transition: all .2s;
-}
-.p-svc-card:hover .p-learn-more { color: var(--green); gap: 10px; }
-.p-svc-card .p-learn-more svg { width: 16px; height: 16px; }
 
-/* ===== 5-POINT APPROACH ===== */
-.p-approach { padding: 80px 0; background: #fff; }
-.p-approach-grid { display: grid; gap: 20px; }
-@media (min-width: 640px) { .p-approach-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 1024px) { .p-approach-grid { grid-template-columns: repeat(5, 1fr); } }
-.p-approach-card {
-  text-align: center; padding: 28px; border-radius: 12px;
-  border: 1px solid var(--card-border); background: #fff;
-  position: relative; overflow: hidden; transition: all .25s;
-}
-.p-approach-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,.08); }
-.p-approach-card .p-card-bar { position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--green); }
-.p-approach-num {
-  width: 44px; height: 44px; border-radius: 50%; background: var(--hero-bg);
-  color: var(--green); font-family: var(--serif); font-size: 1.125rem; font-weight: 600;
-  display: flex; align-items: center; justify-content: center; margin: 0 auto 16px;
-}
-.p-approach-card h3 { font-family: var(--serif); font-size: 1.0625rem; font-weight: 500; color: var(--text-primary); margin-bottom: 8px; }
-.p-approach-card p { font-size: .875rem; color: var(--text-secondary); line-height: 1.6; }
 
-/* ===== JOURNEY ===== */
-.p-journey { padding: 80px 0; background: #fff; }
-.p-journey-grid { display: grid; gap: 64px; align-items: center; }
-@media (min-width: 1024px) { .p-journey-grid { grid-template-columns: 1fr 1fr; } }
-.p-journey h2 { font-family: var(--serif); font-size: 1.875rem; font-weight: 400; color: var(--text-primary); margin-bottom: 24px; line-height: 1.25; }
-@media (min-width: 768px) { .p-journey h2 { font-size: 2.25rem; } }
-.p-journey > .p-container > .p-journey-grid > div:first-child > p { font-size: 1rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 28px; }
-.p-journey-steps { margin-bottom: 32px; }
-.p-journey-step {
-  display: flex; align-items: flex-start; gap: 14px; padding: 12px 0;
-  border-bottom: 1px solid #f0f0f0;
-}
-.p-journey-step:last-child { border-bottom: none; }
-.p-journey-num {
-  flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%; background: var(--hero-bg);
-  color: var(--green); font-size: .875rem; font-weight: 600;
-  display: flex; align-items: center; justify-content: center; margin-top: 2px;
-}
-.p-journey-step span { font-size: .9375rem; color: var(--text-secondary); line-height: 1.6; }
-.p-journey-step strong { color: var(--text-primary); }
-.p-journey-img { border-radius: 16px; overflow: hidden; position: relative; order: -1; }
-@media (min-width: 1024px) { .p-journey-img { order: 1; } }
-.p-journey-img img { width: 100%; height: 320px; object-fit: cover; }
-@media (min-width: 1024px) { .p-journey-img img { height: 420px; } }
-.p-journey-img::after {
-  content: ''; position: absolute; bottom: 0; left: 0; right: 0;
-  height: 50%; background: linear-gradient(to top, rgba(47,59,45,.3), transparent);
-  border-radius: 0 0 16px 16px;
-}
 
-/* ===== CTA ===== */
-.p-cta { background: linear-gradient(to bottom, var(--hero-bg), var(--hero-bg-dark)); padding: 72px 0; text-align: center; }
-.p-cta h2 { font-family: var(--serif); font-size: 1.875rem; font-weight: 400; color: var(--text-primary); margin-bottom: 16px; }
-@media (min-width: 768px) { .p-cta h2 { font-size: 2.25rem; } }
-.p-cta > .p-container > p { font-size: 1.0625rem; color: var(--text-secondary); margin-bottom: 32px; max-width: 500px; margin-left: auto; margin-right: auto; }
-.p-cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
-</style>
-  <style>
-.p-footer { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #2f3b2d; color: rgba(255,255,255,.7); -webkit-font-smoothing: antialiased; line-height: 1.6; }
-.p-footer *, .p-footer *::before, .p-footer *::after { box-sizing: border-box; margin: 0; padding: 0; }
-.p-footer img { max-width: 100%; height: auto; display: block; }
-.p-footer a { text-decoration: none; color: inherit; }
-.p-footer ul { list-style: none; }
-.p-footer-container { width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 1rem; }
-@media (min-width: 640px) { .p-footer-container { padding: 0 1.5rem; } }
-@media (min-width: 1024px) { .p-footer-container { padding: 0 2.5rem; } }
 
-/* Accent bar above footer */
-.p-footer-accent { height: 4px; background: linear-gradient(to right, #3d6b3d, #5a9a5a, #3d6b3d); }
 
-.p-footer-inner { padding: 56px 0 0; }
+/* Social icons */
+
+
+
+
+
+
+
+
+/* Bottom bar */
+
+@media (min-width: 640px) {  }
+
+
+
+/* Disclosure */
+
+
+
+
+
+/* === Perspectives Section === */
+.p-perspectives { padding: 80px 0; background: #fff; }
+.p-perspectives-current { margin-bottom: 48px; }
+.p-pdf-embed-wrapper { border-radius: 12px; overflow: hidden; border: 1px solid var(--card-border); box-shadow: 0 4px 20px rgba(0,0,0,.08); margin-bottom: 16px; }
+.p-pdf-embed { width: 100%; height: 700px; border: none; display: block; }
+@media (max-width: 768px) { .p-pdf-embed { height: 450px; } }
+.p-pdf-download-bar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+.p-pdf-label { font-size: 1rem; font-weight: 600; color: var(--text-primary); }
+
+.p-perspectives-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-bottom: 32px; }
+.p-perspective-card { border-radius: 12px; overflow: hidden; border: 1px solid var(--card-border); background: var(--section-alt); transition: transform .2s, box-shadow .2s; }
+.p-perspective-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,.1); }
+.p-perspective-card a { text-decoration: none; color: inherit; display: block; }
+.p-perspective-thumb { overflow: hidden; height: 200px; }
+.p-perspective-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform .3s; }
+.p-perspective-card:hover .p-perspective-thumb img { transform: scale(1.05); }
+.p-perspective-info { padding: 20px; }
+.p-perspective-date { display: inline-block; font-size: .75rem; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; color: var(--green); margin-bottom: 8px; }
+.p-perspective-info h4 { font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.p-perspective-info p { font-size: .875rem; color: var(--text-secondary); line-height: 1.6; }
+
+.p-perspectives-action { text-align: center; }
+
+/* === Economy Dashboard Section === */
+.p-economy-section { padding: 80px 0; background: var(--section-alt); }
+.p-economy-card { max-width: 800px; margin: 0 auto; background: #fff; border-radius: 12px; border: 1px solid var(--card-border); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,.06); }
+.p-economy-preview { overflow: hidden; }
+.p-economy-preview img { width: 100%; display: block; }
+.p-economy-card > a { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 20px; text-align: center; }
+
+/* === Standardized Footer === */
+.p-footer { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #2f3b2d; color: rgba(255,255,255,.7); padding: 56px 0 0; }
 .p-footer-grid { display: grid; gap: 40px; margin-bottom: 40px; }
 @media (min-width: 768px) { .p-footer-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 1024px) { .p-footer-grid { grid-template-columns: 1.5fr 1fr 1fr 1fr; } }
-.p-footer-brand img { height: 48px; width: auto; object-fit: contain; margin-bottom: 16px; }
-.p-footer-brand p { font-size: .875rem; line-height: 1.7; max-width: 320px; }
-.p-footer h4 {
-  color: #fff; font-size: .75rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
-  margin-bottom: 20px;
-}
-.p-footer ul li { margin-bottom: 10px; }
-.p-footer ul a { font-size: .875rem; color: rgba(255,255,255,.6); transition: color .2s; }
-.p-footer ul a:hover { color: #8db580; }
-.p-footer-contact-item { display: flex; align-items: center; gap: 10px; }
-.p-footer-contact-item svg { width: 16px; height: 16px; flex-shrink: 0; }
-
-/* Social icons */
-.p-footer-socials { display: flex; gap: 14px; margin-top: 20px; }
-.p-footer-socials a {
-  display: flex; align-items: center; justify-content: center;
-  width: 36px; height: 36px; border-radius: 50%;
-  transition: transform .2s, opacity .2s;
-}
-.p-footer-socials a:hover { transform: translateY(-2px); opacity: .85; }
-.p-footer-socials svg { width: 20px; height: 20px; }
-.p-footer-social-fb { background: #1877F2; }
-.p-footer-social-li { background: #0A66C2; }
-.p-footer-social-yelp { background: #D32323; }
-
-/* Bottom bar */
-.p-footer-bottom {
-  border-top: 1px solid rgba(255,255,255,.1); padding-top: 24px; margin-top: 16px;
-  display: flex; flex-direction: column; align-items: center; gap: 8px;
-  font-size: .75rem; color: rgba(255,255,255,.4);
-}
+.p-footer-brand p { font-size: .875rem; line-height: 1.7; max-width: 320px; margin-top: 12px; }
+.p-footer h4, .p-footer-col h4 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: rgba(255,255,255,.95); margin-bottom: 16px; }
+.p-footer-col { display: flex; flex-direction: column; gap: 10px; }
+.p-footer-col a { font-size: .875rem; color: rgba(255,255,255,.6); text-decoration: none; transition: color .2s; }
+.p-footer-col a:hover { color: #8db580; }
+.p-footer-social { display: flex; gap: 12px; margin-top: 16px; }
+.p-social-icon { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; transition: transform .2s, opacity .2s; }
+.p-social-icon:hover { transform: translateY(-2px); opacity: .85; }
+.p-social-fb { background: #1877F2; }
+.p-social-li { background: #0A66C2; }
+.p-social-yelp { background: #D32323; }
+.p-footer-bottom { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 24px 0; border-top: 1px solid rgba(255,255,255,.1); font-size: .8125rem; color: rgba(255,255,255,.4); }
 @media (min-width: 640px) { .p-footer-bottom { flex-direction: row; justify-content: space-between; } }
-.p-footer-bottom a { color: rgba(255,255,255,.4); transition: color .2s; }
+.p-footer-bottom a { color: rgba(255,255,255,.4); text-decoration: none; transition: color .2s; }
 .p-footer-bottom a:hover { color: #8db580; }
-
-/* Disclosure */
-.p-footer-disclosure {
-  border-top: 1px solid rgba(255,255,255,.08);
-  padding: 24px 0 32px;
-  margin-top: 24px;
-}
-.p-footer-disclosure p {
-  font-size: .6875rem; line-height: 1.8;
-  color: rgba(255,255,255,.3);
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-}
-.p-footer-disclosure p + p { margin-top: 12px; }
-.p-footer-disclosure p:first-child {
-  font-weight: 600; font-size: .75rem; color: rgba(255,255,255,.4);
-}
 </style>
   <style>
   
 /* ===== PERSPECTIVES ===== */
-.p-perspectives { padding: 80px 0; background: #fff; }
-.p-perspectives-grid { display: grid; gap: 40px; margin-bottom: 48px; }
-@media (min-width: 768px) { .p-perspectives-grid { grid-template-columns: 1fr 1fr; } }
-.p-pdf-preview { text-align: center; }
-.p-pdf-cover { position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,.1); max-width: 380px; margin: 0 auto; }
-.p-pdf-cover img { width: 100%; display: block; }
-.p-pdf-overlay { position: absolute; bottom: 0; left: 0; right: 0; padding: 24px; background: linear-gradient(to top, rgba(0,0,0,.7), transparent); display: flex; justify-content: center; }
-.p-pdf-label { margin-top: 16px; font-family: var(--serif); font-style: italic; font-size: .9375rem; color: var(--text-muted); }
-.p-dashboard-peek { display: flex; align-items: center; }
-.p-dashboard-card { background: var(--section-alt); border-radius: 12px; border: 1px solid var(--card-border); padding: 32px; }
-.p-dashboard-header { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
-.p-dashboard-header h3 { font-size: 1.125rem; font-weight: 600; color: var(--text-primary); }
-.p-dashboard-card > p { font-size: .9375rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 20px; }
-.p-dashboard-preview { border-radius: 8px; overflow: hidden; margin-bottom: 24px; border: 1px solid var(--card-border); }
-.p-dashboard-preview img { width: 100%; display: block; }
-.p-quick-links { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
-.p-quick-links .p-btn-outline { font-size: .8125rem; padding: 10px 20px; }
 
-  </style>
+
+@media (min-width: 768px) {  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/* === Perspectives Section === */
+.p-perspectives { padding: 80px 0; background: #fff; }
+.p-perspectives-current { margin-bottom: 48px; }
+.p-pdf-embed-wrapper { border-radius: 12px; overflow: hidden; border: 1px solid var(--card-border); box-shadow: 0 4px 20px rgba(0,0,0,.08); margin-bottom: 16px; }
+.p-pdf-embed { width: 100%; height: 700px; border: none; display: block; }
+@media (max-width: 768px) { .p-pdf-embed { height: 450px; } }
+.p-pdf-download-bar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+.p-pdf-label { font-size: 1rem; font-weight: 600; color: var(--text-primary); }
+
+.p-perspectives-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-bottom: 32px; }
+.p-perspective-card { border-radius: 12px; overflow: hidden; border: 1px solid var(--card-border); background: var(--section-alt); transition: transform .2s, box-shadow .2s; }
+.p-perspective-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,.1); }
+.p-perspective-card a { text-decoration: none; color: inherit; display: block; }
+.p-perspective-thumb { overflow: hidden; height: 200px; }
+.p-perspective-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform .3s; }
+.p-perspective-card:hover .p-perspective-thumb img { transform: scale(1.05); }
+.p-perspective-info { padding: 20px; }
+.p-perspective-date { display: inline-block; font-size: .75rem; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; color: var(--green); margin-bottom: 8px; }
+.p-perspective-info h4 { font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+.p-perspective-info p { font-size: .875rem; color: var(--text-secondary); line-height: 1.6; }
+
+.p-perspectives-action { text-align: center; }
+
+/* === Economy Dashboard Section === */
+.p-economy-section { padding: 80px 0; background: var(--section-alt); }
+.p-economy-card { max-width: 800px; margin: 0 auto; background: #fff; border-radius: 12px; border: 1px solid var(--card-border); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,.06); }
+.p-economy-preview { overflow: hidden; }
+.p-economy-preview img { width: 100%; display: block; }
+.p-economy-card > a { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 20px; text-align: center; }
+
+/* === Standardized Footer === */
+.p-footer { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #2f3b2d; color: rgba(255,255,255,.7); padding: 56px 0 0; }
+.p-footer-grid { display: grid; gap: 40px; margin-bottom: 40px; }
+@media (min-width: 768px) { .p-footer-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .p-footer-grid { grid-template-columns: 1.5fr 1fr 1fr 1fr; } }
+.p-footer-brand p { font-size: .875rem; line-height: 1.7; max-width: 320px; margin-top: 12px; }
+.p-footer h4, .p-footer-col h4 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: rgba(255,255,255,.95); margin-bottom: 16px; }
+.p-footer-col { display: flex; flex-direction: column; gap: 10px; }
+.p-footer-col a { font-size: .875rem; color: rgba(255,255,255,.6); text-decoration: none; transition: color .2s; }
+.p-footer-col a:hover { color: #8db580; }
+.p-footer-social { display: flex; gap: 12px; margin-top: 16px; }
+.p-social-icon { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; transition: transform .2s, opacity .2s; }
+.p-social-icon:hover { transform: translateY(-2px); opacity: .85; }
+.p-social-fb { background: #1877F2; }
+.p-social-li { background: #0A66C2; }
+.p-social-yelp { background: #D32323; }
+.p-footer-bottom { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 24px 0; border-top: 1px solid rgba(255,255,255,.1); font-size: .8125rem; color: rgba(255,255,255,.4); }
+@media (min-width: 640px) { .p-footer-bottom { flex-direction: row; justify-content: space-between; } }
+.p-footer-bottom a { color: rgba(255,255,255,.4); text-decoration: none; transition: color .2s; }
+.p-footer-bottom a:hover { color: #8db580; }
+</style>
 </head>
 <body style="margin:0">
   <!-- Google Tag Manager (noscript) -->
@@ -773,47 +576,72 @@ header[data-ux], nav[data-ux] { display: none !important; }
       <p>Stay informed with our latest insights on retirement planning, tax strategies, and wealth preservation.</p>
     </div>
     
-    <div class="p-perspectives-grid">
-      <!-- PDF Preview -->
-      <div class="p-pdf-preview">
-        <div class="p-pdf-cover">
-          <img src="assets/images/blog-perspectives-may.webp" alt="Prospera Perspectives — May 2026" loading="lazy">
-          <div class="p-pdf-overlay">
-            <a href="https://img1.wsimg.com/blobby/go/4f586f71-2957-4911-9262-4f81c6a1e4d6/Prospera%20Perspectives%20-%20May%202026.pdf" class="p-btn-primary" target="_blank" rel="noopener noreferrer">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-              Download Current Issue
-            </a>
-          </div>
-        </div>
-        <p class="p-pdf-label">Prospera Perspectives — May 2026</p>
+    <!-- PDF Preview of Current Issue -->
+    <div class="p-perspectives-current">
+      <div class="p-pdf-embed-wrapper">
+        <iframe src="assets/docs/prospera-perspectives-may-2026.pdf#toolbar=0&navpanes=0" class="p-pdf-embed" title="Prospera Perspectives — May 2026"></iframe>
       </div>
-      
-      <!-- Economy Dashboard Sneak Peek -->
-      <div class="p-dashboard-peek">
-        <div class="p-dashboard-card">
-          <div class="p-dashboard-header">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:24px;height:24px;color:var(--green)"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
-            <h3>Prospera Economic Conditions Dashboard</h3>
-          </div>
-          <p>Track the key economic indicators that impact your financial plan — real-time data on market conditions, interest rates, and economic trends.</p>
-          <div class="p-dashboard-preview">
-            <img src="assets/images/economy-dashboard.jpg" alt="Economy Dashboard Preview" loading="lazy">
-          </div>
-          <a href="economy.html" class="p-btn-primary">
-            View Prospera Economic Conditions Dashboard
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </a>
-        </div>
+      <div class="p-pdf-download-bar">
+        <span class="p-pdf-label">Prospera Perspectives &mdash; May 2026 (Current Issue)</span>
+        <a href="assets/docs/prospera-perspectives-may-2026.pdf" class="p-btn-primary" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Download Current Issue
+        </a>
       </div>
     </div>
 
-    <!-- Quick Links -->
-    <div class="p-quick-links">
-      <a href="resources.html" class="p-btn-outline">Download Prior Issues of Prospera Perspectives</a>
-      <a href="economy.html" class="p-btn-outline">Prospera Economic Conditions Dashboard</a>
-      <a href="contact.html" class="p-btn-outline">Contact Us</a>
-      <a href="contact.html#pueblo-map" class="p-btn-outline">Colorado Springs Office Map</a>
-      <a href="contact.html#cos-map" class="p-btn-outline">Pueblo Office Map</a>
+    <!-- Recent Issue Preview Cards -->
+    <div class="p-perspectives-cards">
+      <div class="p-perspective-card">
+        <a href="assets/docs/prospera-perspectives-may-2026.pdf" target="_blank" rel="noopener noreferrer">
+          <div class="p-perspective-thumb">
+            <img src="assets/images/blog-perspectives-may.webp" alt="Prospera Perspectives — May 2026" loading="lazy">
+          </div>
+          <div class="p-perspective-info">
+            <span class="p-perspective-date">May 2026</span>
+            <h4>Prospera Perspectives</h4>
+            <p>Latest insights on market conditions, retirement planning, and wealth preservation strategies.</p>
+          </div>
+        </a>
+      </div>
+      <div class="p-perspective-card">
+        <a href="assets/docs/prospera-perspectives-april-2026.pdf" target="_blank" rel="noopener noreferrer">
+          <div class="p-perspective-thumb">
+            <img src="assets/images/blog-perspectives-apr.webp" alt="Prospera Perspectives — April 2026" loading="lazy">
+          </div>
+          <div class="p-perspective-info">
+            <span class="p-perspective-date">April 2026</span>
+            <h4>Prospera Perspectives</h4>
+            <p>Tax strategies, income floor planning, and economic outlook for retirees and pre-retirees.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="p-perspectives-action">
+      <a href="resources.html" class="p-btn-primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+        Download Prior Issues of Prospera Perspectives
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Economy Dashboard Section -->
+<section class="p-economy-section" id="economy-dashboard">
+  <div class="p-container">
+    <div class="p-section-heading">
+      <h2>Prospera Economic Conditions Dashboard</h2>
+      <p>Track the key economic indicators that impact your financial plan &mdash; real-time data on market conditions, interest rates, and economic trends.</p>
+    </div>
+    <div class="p-economy-card">
+      <div class="p-economy-preview">
+        <img src="assets/images/economy-dashboard.jpg" alt="Prospera Economic Conditions Dashboard Preview" loading="lazy">
+      </div>
+      <a href="economy.html" class="p-btn-primary">
+        View Prospera Economic Conditions Dashboard
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
     </div>
   </div>
 </section>
@@ -823,90 +651,58 @@ header[data-ux], nav[data-ux] { display: none !important; }
 
 
 
-<div class="p-footer-accent"></div>
 
-<footer class="p-footer">
-  <div class="p-footer-container p-footer-inner">
-    <div class="p-footer-grid">
-      <!-- Brand -->
-      <div class="p-footer-brand">
-        <!-- UPDATE: Replace src with your GoDaddy-hosted logo URL -->
-        <img src="assets/images/prospera-logo.png" alt="Prospera Financial">
-        <p>Comprehensive wealth preservation, retirement income planning, and tax-efficient strategies for individuals and business owners in Colorado Springs and Pueblo.</p>
 
-        <!-- Social Icons -->
-        <div class="p-footer-socials">
-          <a href="https://www.facebook.com/355378880990303" target="_blank" rel="noopener noreferrer" class="p-footer-social-fb" aria-label="Facebook">
-            <svg viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
-          </a>
-          <a href="https://www.linkedin.com/company/prosperafinancial" target="_blank" rel="noopener noreferrer" class="p-footer-social-li" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" fill="white"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
-          </a>
-          <a href="https://www.yelp.com/biz/prospera-financial-pueblo" target="_blank" rel="noopener noreferrer" class="p-footer-social-yelp" aria-label="Yelp">
-            <svg viewBox="0 0 24 24" fill="white"><path d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.895-4.308a1.02 1.02 0 011.727.105l2.705 3.754c.39.543.04 1.295-.64 1.39a1 1 0 01-.516-.044zm-3.836 5.15l-1.246-5.053c-.237-.964 1.006-1.606 1.726-.89l3.72 3.695a1.019 1.019 0 01-.383 1.714l-3.02.938c-.598.186-1.178-.178-1.297-.804zm-5.545 1.09l2.56-4.41c.494-.852 1.8-.51 1.812.474l.065 5.193a1.02 1.02 0 01-1.168 1.022l-2.63-.467c-.62-.11-.988-.695-.84-1.253l.201-.558zm-2.68-5.325l5.164-.636c.982-.12 1.394 1.158.572 1.773l-4.224 3.158a1.02 1.02 0 01-1.665-.628l-.596-2.792c-.1-.474.218-.93.698-1.045l.05-.013zm-.7-2.882l4.278 2.96c.814.563.288 1.818-.73 1.74l-5.227-.396a1.02 1.02 0 01-.907-1.362l1.595-3.41c.22-.47.735-.672 1.21-.464l-.22.932zm4.33-8.463V7.36c0 1.006-1.378 1.378-1.878.507l-3.47-6.05c-.26-.452-.03-1.025.46-1.155L10.467.42c.48-.127.972.106 1.18.555l.082.189z"></path></svg>
-          </a>
+    <footer class="p-footer">
+      <div class="p-container">
+        <div class="p-footer-grid">
+          <div class="p-footer-brand">
+            <img src="assets/images/prospera-logo.png" alt="Prospera Financial" class="p-footer-logo" style="height:48px;width:auto">
+            <p>Comprehensive wealth preservation, retirement income planning, and tax-efficient strategies for individuals and business owners in Colorado Springs and Pueblo.</p>
+            <div class="p-footer-social">
+              <a href="https://www.facebook.com/355378880990303" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="p-social-icon p-social-fb">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/company/prosperafinancial" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="p-social-icon p-social-li">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <a href="https://www.yelp.com/biz/prospera-financial-pueblo" target="_blank" rel="noopener noreferrer" aria-label="Yelp" class="p-social-icon p-social-yelp">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12.271 10.226c-.069-.107-.14-.2-.227-.278-.39-.35-.962-.313-1.09-.3l-.007.001c-.139.017-1.107.172-2.074.349a31.077 31.077 0 00-1.775.38c-.444.115-.73.236-.878.373-.291.273-.338.7-.115 1.041.113.17.303.317.583.45.093.043 1.218.533 2.143.906.924.375 1.733.682 1.77.695.202.072.388.093.551.063.286-.053.504-.26.59-.558.02-.07.26-1.017.463-1.957.203-.94.37-1.744.375-1.776.022-.135.008-.258-.04-.378l-.013-.028c-.024-.05-.064-.113-.108-.167a.762.762 0 00-.145-.137zm-1.204 7.386c-.088-.166-.4-.536-.698-.555-.06-.005-.122.002-.19.022l-.023.008c-.126.044-1.054.46-1.932.895-.877.435-1.639.832-1.668.849-.27.15-.395.28-.462.402-.158.285-.084.656.18.9.132.122.34.231.636.333.098.031 1.278.324 2.24.534.961.21 1.795.376 1.834.383.17.031.322.02.455-.035.232-.098.39-.307.428-.565.009-.059.027-1.052.027-2.024 0-.972-.015-1.815-.017-1.852a.84.84 0 00-.043-.178.678.678 0 00-.104-.186l-.01-.013a.754.754 0 00-.14-.131.573.573 0 00-.156-.08l-.001-.001a.52.52 0 00-.161-.028h-.002c-.042 0-.092.005-.149.02l-.044.012zm5.058-1.027l-.015-.005c-.132-.04-1.1-.265-2.046-.457-.948-.19-1.777-.345-1.813-.35a.852.852 0 00-.183-.01c-.09.008-.174.033-.252.076l-.015.009a.762.762 0 00-.165.136.675.675 0 00-.114.175c-.068.142-.133.49-.117.766.004.054.015.1.03.14.037.104.307.903.609 1.762.303.86.587 1.617.603 1.655.138.36.282.547.44.638.31.178.693.093.932-.207.12-.15.22-.382.304-.71.026-.103.35-1.27.615-2.218.266-.95.482-1.759.487-1.793.016-.116.003-.22-.04-.318l-.006-.014a.75.75 0 00-.104-.16.68.68 0 00-.145-.13c-.086-.06-.13-.077-.171-.09l-.014-.004zm-4.103-3.893l.007-.027c.04-.143.237-1.109.411-2.062.174-.953.311-1.784.316-1.82a.85.85 0 00-.005-.185.676.676 0 00-.047-.159l-.008-.018a.756.756 0 00-.113-.172.672.672 0 00-.16-.136c-.15-.1-.508-.203-.778-.22a.82.82 0 00-.144.006c-.104.015-.925.2-1.802.44-.877.24-1.647.468-1.684.482-.346.127-.525.254-.627.403-.2.294-.152.677.117.932.135.128.352.247.664.363.1.036 1.24.497 2.172.84.93.341 1.742.621 1.778.631.118.033.224.035.32-.002l.014-.007a.749.749 0 00.163-.098.676.676 0 00.136-.141c.065-.084.083-.128.1-.17l.005-.015c.023-.074.035-.156.03-.245-.003-.05-.017-.111-.038-.186l-.012-.04zM10.67 2.764c-.06-.117-.256-.56-.622-.618a.82.82 0 00-.143-.009c-.1.005-.395.04-.772.2l-.006.003c-.037.015-.803.361-1.619.768-.816.407-1.546.794-1.576.813-.278.167-.41.315-.479.454-.135.27-.058.606.188.817.124.107.33.2.627.285.098.027 1.298.29 2.282.483.986.193 1.85.347 1.889.352.164.02.31-.003.436-.068.22-.114.36-.33.379-.587.004-.06-.012-1.057-.06-2.032-.047-.974-.116-1.824-.123-1.862z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="p-footer-col">
+            <h4>Services</h4>
+            <a href="wealth.html">Wealth Preservation</a>
+            <a href="taxfree.html">Tax-Free Retirement</a>
+            <a href="bank.html">Personal Bank Strategy</a>
+            <a href="insurance.html">Insurance Solutions</a>
+            <a href="https://prosperacfo.com" target="_blank" rel="noopener noreferrer">CFO Services</a>
+          </div>
+          <div class="p-footer-col">
+            <h4>Company</h4>
+            <a href="about.html">About Us</a>
+            <a href="journey.html">Our Journey</a>
+            <a href="resources.html">Resources</a>
+            <a href="upload.html">Upload Documents</a>
+            <a href="economy.html">Prospera Economic Conditions Dashboard</a>
+          </div>
+          <div class="p-footer-col">
+            <h4>Contact</h4>
+            <a href="contact.html">Contact Us</a>
+            <a href="schedule.html">Schedule a Meeting</a>
+            <a href="tel:7195216050">719.521.6050</a>
+            <a href="mailto:ContactUs@iProspera.com">Email Us</a>
+            <a href="https://maps.google.com/?q=5755+Mark+Dabling+Blvd+Suite+110+Colorado+Springs+CO+80919" target="_blank" rel="noopener noreferrer">Colorado Springs Office Map</a>
+            <a href="https://maps.google.com/?q=100+W+1st+St+Suite+230+Pueblo+CO+81003" target="_blank" rel="noopener noreferrer">Pueblo Office Map</a>
+          </div>
+        </div>
+        <div class="p-footer-bottom">
+          <p>&copy; 2024&ndash;2026 Prospera Financial. All rights reserved.</p>
+          <a href="privacy.html">Privacy Policy</a>
         </div>
       </div>
-
-      <!-- Services -->
-      <div>
-        <h4>Services</h4>
-        <ul>
-          <li><a href="wealth.html">Wealth Preservation</a></li>
-          <li><a href="taxfree.html">Tax-Free Retirement</a></li>
-          <li><a href="bank.html">Personal Bank</a></li>
-          <li><a href="insurance.html">Insurance</a></li>
-          <li><a href="https://prosperacfo.com">CFO Services</a></li>
-        </ul>
-      </div>
-
-      <!-- Company -->
-      <div>
-        <h4>Company</h4>
-        <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="journey.html">Our Journey</a></li>
-          <li><a href="resources.html">Resources</a></li>
-          <li><a href="upload.html">Upload Documents</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact -->
-      <div>
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="tel:7195216050" class="p-footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-            719.521.6050
-          </a></li>
-          <li><a href="mailto:chad.heberly@iprospera.com" class="p-footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            Email Us
-          </a></li>
-          <li><a href="schedule.html" class="p-footer-contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-            Schedule Meeting
-          </a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Bottom bar -->
-    <div class="p-footer-bottom">
-      <span>© 2026 Prospera Financial. All rights reserved.</span>
-      <a href="privacy.html">Privacy Policy</a>
-    </div>
-
-    <!-- Disclosure -->
-    <div class="p-footer-disclosure">
-      <p>Copyright © 2026 Prospera Financial, LLC - All Rights Reserved.</p>
-      <p>Prospera Financial is a separate entity providing insurance products and solutions, owned by Chad Heberly. These offerings include life insurance, annuities, and other safe money solutions designed to support your financial goals.</p>
-      <p>While Prospera Financial operates independently, Chad Heberly also owns Prospera Investment Advisors and operates as an Investment Advisors Representative providing fee-based financial planning and investment management services. This common ownership may create potential conflicts of interest when insurance products are recommended to clients of Prospera Investment Advisors. Insurance products offered through Prospera Financial may involve commission-based compensation, which differs from the fee-based structure of investment advisory services.</p>
-      <p>Prospera Financial is committed to ensuring that all recommendations are based on your individual financial goals, needs, and best interests. For more information about our services or to address any concerns about conflicts of interest, please <a href="contact.html" style="color:rgba(255,255,255,.5);text-decoration:underline">contact us</a> using the contact form.</p>
-    </div>
-  </div>
-</footer>
+    </footer>
 
 <script>
 (function() {
