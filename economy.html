@@ -126,7 +126,7 @@
 
     <!-- ===== MAIN CONTENT ===== -->
     <main>
-      <section class="p-hero p-hero-overlay" style="background-image:url('/assets/images/economy-dashboard.jpg')">
+      <section class="p-hero p-hero-overlay" style="background-image:url('assets/images/economy-dashboard.jpg')">
         <div class="p-container p-hero-content">
           <p class="p-eyebrow">Market Insights</p>
           <h1>Prospera Economic Conditions Dashboard</h1>
@@ -134,40 +134,16 @@
         </div>
       </section>
 
-      <section class="p-section">
+      <section class="p-section" style="padding: 40px 0 80px;">
         <div class="p-container">
-          <p class="p-center-text">Stay informed with key economic indicators. Updated regularly to help you understand the current financial landscape.</p>
-          <div class="p-economy-widgets">
-            <!-- TradingView widgets -->
-            <div class="p-economy-row">
-              <div class="p-economy-widget">
-                <h3>S&amp;P 500</h3>
-                <div class="tradingview-widget-container">
-                  <div id="tv-sp500"></div>
-                </div>
-              </div>
-              <div class="p-economy-widget">
-                <h3>Dow Jones</h3>
-                <div class="tradingview-widget-container">
-                  <div id="tv-dow"></div>
-                </div>
-              </div>
-            </div>
-            <div class="p-economy-row">
-              <div class="p-economy-widget">
-                <h3>NASDAQ</h3>
-                <div class="tradingview-widget-container">
-                  <div id="tv-nasdaq"></div>
-                </div>
-              </div>
-              <div class="p-economy-widget">
-                <h3>10-Year Treasury</h3>
-                <div class="tradingview-widget-container">
-                  <div id="tv-treasury"></div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <iframe
+            src="https://recession-dashboard-7208ae9f.viktor.space"
+            width="100%"
+            height="2700"
+            style="border: none; border-radius: 8px; max-width: 1400px; display: block; margin: 0 auto;"
+            title="Prospera Economic Conditions Monitor"
+            loading="lazy"
+          ></iframe>
         </div>
       </section>
 
@@ -227,24 +203,7 @@
 
     <script src="assets/js/main.js"></script>
     
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-    </script>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const widgets = [
-        {container: 'tv-sp500', symbol: 'SPX'},
-        {container: 'tv-dow', symbol: 'DJI'},
-        {container: 'tv-nasdaq', symbol: 'IXIC'},
-        {container: 'tv-treasury', symbol: 'TNX'}
-      ];
-      widgets.forEach(w => {
-        const el = document.getElementById(w.container);
-        if (el) {
-          el.innerHTML = '<iframe src="https://www.google.com/finance/quote/.'+w.symbol+':INDEXSP" style="width:100%;height:300px;border:none;border-radius:8px" loading="lazy"></iframe>';
-        }
-      });
-    });
-    </script>
+
 
 </body>
 </html>
