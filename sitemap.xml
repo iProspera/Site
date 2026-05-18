@@ -23,4 +23,34 @@
   <url><loc>https://iprospera.com/f/when-risk-turns-against-you-protecting-retirement-from-downturns</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://iprospera.com/f/shifting-from-growth-to-income-retirement-moves-to-make-today</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://iprospera.com/f/prosperas-financial-ecosystem</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url>
+    <loc>https://iprospera.com/discovery</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://iprospera.com/financial</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://iprospera.com/schedulecos</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://iprospera.com/schedulepueblo</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://iprospera.com/survey</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://iprospera.com/upload</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>
